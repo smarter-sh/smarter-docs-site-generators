@@ -1,0 +1,29 @@
+# dependencies and build output
+node_modules/
+venv/
+build/
+dist/
+coverage/
+.coverage
+*.egg-info/
+__pycache__/
+.pytest_cache/
+vitepress/example/docs/.vitepress/dist/
+vitepress/example/docs/.vitepress/cache/
+
+# os files
+.DS_Store
+Thumbs.db
+
+# editors
+.idea/
+*.swp
+
+# logs
+*.log
+
+# typical secrets files
+.env
+.env.*
+.npmrc
+.pypirc

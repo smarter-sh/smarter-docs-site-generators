@@ -1,0 +1,57 @@
+{
+  "name": "@smarter.sh/docusaurus-plugin-smarter-chat",
+  "version": "0.1.0",
+  "description": "A Docusaurus plugin that adds a Smarter chatbot to every page of a documentation site.",
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "chatbot",
+    "ai",
+    "smarter"
+  ],
+  "homepage": "https://docs.smarter.sh/en/latest/smarter-framework/smarter-docs-sites.html",
+  "bugs": "https://github.com/smarter-sh/smarter-docs-site-generators/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smarter-sh/smarter-docs-site-generators.git",
+    "directory": "docusaurus"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "Lawrence McDaniel <lpm0073@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@docusaurus/core": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "5.0.4",
+    "typescript": "5.9.3",
+    "vitest": "5.0.4"
+  }
+}

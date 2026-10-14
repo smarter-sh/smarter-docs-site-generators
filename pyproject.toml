@@ -1,0 +1,12 @@
+# Tool configuration for the Python packages (mkdocs/, sphinx/), as in the Smarter platform and the Python SDK.
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = ["mkdocs_smarter_chat", "sphinx_smarter_chat", "htmltags"]
+
+[tool.pytest.ini_options]
+# test/htmltags.py is shared by both packages' tests.
+pythonpath = ["test"]

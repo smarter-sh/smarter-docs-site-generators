@@ -1,0 +1,16 @@
+{
+  "$comment": "Checks the plugin's type declarations, and the JavaScript's JSDoc against them: npm run typecheck.",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "noEmit": true,
+    "types": [],
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}

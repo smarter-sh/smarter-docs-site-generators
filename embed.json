@@ -1,0 +1,5 @@
+{
+  "$comment": "The version of @smarter.sh/ui-chat's embed script that every package loads by default. Change it with `make embed-version V=x.y.z`, which copies it into every package. See doc/adr/008-cdn.md.",
+  "package": "@smarter.sh/ui-chat",
+  "version": "0.9.0"
+}

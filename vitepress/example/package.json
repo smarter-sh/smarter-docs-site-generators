@@ -1,0 +1,13 @@
+{
+  "name": "smarter-chat-vitepress-example",
+  "private": true,
+  "description": "A VitePress site with the Smarter Chat launcher, the recipe in ../README.md. `make test-vitepress` builds it and checks its pages.",
+  "type": "module",
+  "scripts": {
+    "build": "vitepress build docs",
+    "dev": "vitepress dev docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

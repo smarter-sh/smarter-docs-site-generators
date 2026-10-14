@@ -1,0 +1,8 @@
+**/node_modules/
+**/coverage/
+build/
+venv/
+vitepress/example/docs/.vitepress/dist/
+vitepress/example/docs/.vitepress/cache/
+**/package-lock.json
+CHANGELOG.md

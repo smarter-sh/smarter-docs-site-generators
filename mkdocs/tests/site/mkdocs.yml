@@ -1,0 +1,5 @@
+site_name: Smoke
+plugins:
+  - smarter-chat:
+      chatbot: https://docs-bot.example.com/
+      position: bottom-left

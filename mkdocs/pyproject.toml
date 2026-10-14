@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs-smarter-chat"
+version = "0.1.0"
+description = "An MkDocs plugin that adds a Smarter chatbot to every page of a documentation site, with any theme, including Material."
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Lawrence McDaniel", email = "lpm0073@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["mkdocs>=1.5"]
+keywords = ["mkdocs", "mkdocs-plugin", "mkdocs-material", "chatbot", "ai", "smarter"]
+classifiers = [
+  "Framework :: MkDocs",
+  "Programming Language :: Python :: 3",
+  "Topic :: Documentation",
+]
+
+[project.urls]
+Homepage = "https://docs.smarter.sh/en/latest/smarter-framework/smarter-docs-sites.html"
+Source = "https://github.com/smarter-sh/smarter-docs-site-generators/tree/main/mkdocs"
+Issues = "https://github.com/smarter-sh/smarter-docs-site-generators/issues"
+
+[project.entry-points."mkdocs.plugins"]
+smarter-chat = "mkdocs_smarter_chat.plugin:SmarterChatPlugin"
+
+[tool.setuptools.packages.find]
+where = ["src"]
