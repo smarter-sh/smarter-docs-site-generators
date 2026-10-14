@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mkdocs-smarter-chat"
-version = "0.1.0"
+version = "0.1.0-alpha.1"
 description = "An MkDocs plugin that adds a Smarter chatbot to every page of a documentation site, with any theme, including Material."
 readme = "README.md"
 license = "AGPL-3.0-or-later"

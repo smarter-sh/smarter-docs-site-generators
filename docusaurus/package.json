@@ -1,6 +1,6 @@
 {
   "name": "@smarter.sh/docusaurus-plugin-smarter-chat",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "A Docusaurus plugin that adds a Smarter chatbot to every page of a documentation site.",
   "keywords": [
     "docusaurus",
