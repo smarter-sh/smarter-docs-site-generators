@@ -1,6 +1,6 @@
 {
   "name": "smarter-docs-site-generators",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "private": true,
   "description": "Developer tooling of Smarter Chat for documentation sites: commitlint, semantic-release, Prettier and ESLint. The packages are in docusaurus/, mkdocs/ and sphinx/.",
   "license": "AGPL-3.0-or-later",
