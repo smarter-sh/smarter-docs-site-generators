@@ -28,10 +28,10 @@ test-docusaurus:
 	cd docusaurus && npx vitest run --coverage && npm run typecheck
 
 test-mkdocs:
-	$(VENV)/python -m pytest mkdocs/tests --cov=mkdocs_smarter_chat --cov-report=term-missing --cov-fail-under=95
+	$(VENV)/python -m pytest mkdocs/tests --cov=mkdocs_smarter_chat --cov-report=term-missing --cov-report=xml:coverage/mkdocs.xml --cov-fail-under=95
 
 test-sphinx:
-	$(VENV)/python -m pytest sphinx/tests --cov=sphinx_smarter_chat --cov-report=term-missing --cov-fail-under=95
+	$(VENV)/python -m pytest sphinx/tests --cov=sphinx_smarter_chat --cov-report=term-missing --cov-report=xml:coverage/sphinx.xml --cov-fail-under=95
 
 test-vitepress:
 	cd vitepress/example && npm run build

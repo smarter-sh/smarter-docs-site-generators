@@ -3,7 +3,11 @@
 > Add a [Smarter](https://smarter.sh) chatbot to every page of a documentation site, with one setting in Docusaurus,
 > MkDocs (and Material), Sphinx or VitePress.
 
+[![Build](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml)
 [![Test](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml)
+[![Docusaurus coverage](https://img.shields.io/codecov/c/github/smarter-sh/smarter-docs-site-generators/main?flag=docusaurus&label=Docusaurus%20coverage&logo=codecov)](https://app.codecov.io/gh/smarter-sh/smarter-docs-site-generators?flags%5B0%5D=docusaurus)
+[![MkDocs coverage](https://img.shields.io/codecov/c/github/smarter-sh/smarter-docs-site-generators/main?flag=mkdocs&label=MkDocs%20coverage&logo=codecov)](https://app.codecov.io/gh/smarter-sh/smarter-docs-site-generators?flags%5B0%5D=mkdocs)
+[![Sphinx coverage](https://img.shields.io/codecov/c/github/smarter-sh/smarter-docs-site-generators/main?flag=sphinx&label=Sphinx%20coverage&logo=codecov)](https://app.codecov.io/gh/smarter-sh/smarter-docs-site-generators?flags%5B0%5D=sphinx)
 [![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue)](LICENSE.txt)
 
 Each package adds the chat launcher of [`@smarter.sh/ui-chat`](https://github.com/smarter-sh/smarter-chat)'s embed
