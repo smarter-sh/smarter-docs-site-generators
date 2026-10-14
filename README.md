@@ -10,12 +10,12 @@ Each package adds the chat launcher of [`@smarter.sh/ui-chat`](https://github.co
 script, a chat button that opens the chat, to every page of the built site. The chatbot is an LLMClient that you build
 and deploy on a Smarter platform, for example with your docs in a vectorstore.
 
-| Generator           | Install                                                    | Configure                                                                      |
-| ------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Docusaurus          | `npm install @smarter.sh/docusaurus-plugin-smarter-chat`   | [docusaurus/](docusaurus/README.md): `plugins` in `docusaurus.config.js`       |
-| MkDocs (+ Material) | `pip install mkdocs-smarter-chat`                          | [mkdocs/](mkdocs/README.md): `plugins` in `mkdocs.yml`                         |
-| Sphinx              | `pip install sphinx-smarter-chat`                          | [sphinx/](sphinx/README.md): `extensions` in `conf.py`                         |
-| VitePress           | nothing                                                    | [vitepress/](vitepress/README.md): one `head` entry in `.vitepress/config.mts` |
+| Generator           | Install                                                  | Configure                                                                      |
+| ------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Docusaurus          | `npm install @smarter.sh/docusaurus-plugin-smarter-chat` | [docusaurus/](docusaurus/README.md): `plugins` in `docusaurus.config.js`       |
+| MkDocs (+ Material) | `pip install mkdocs-smarter-chat`                        | [mkdocs/](mkdocs/README.md): `plugins` in `mkdocs.yml`                         |
+| Sphinx              | `pip install sphinx-smarter-chat`                        | [sphinx/](sphinx/README.md): `extensions` in `conf.py`                         |
+| VitePress           | nothing                                                  | [vitepress/](vitepress/README.md): one `head` entry in `.vitepress/config.mts` |
 
 Every one writes the same tag, with the same options, and fails the build if the chatbot's url is missing or invalid.
 Other generators (Hugo, Jekyll, Astro) need only that tag in their base template; see the

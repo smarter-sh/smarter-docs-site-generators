@@ -18,5 +18,9 @@ make lint
 git diff --name-only | xargs venv/bin/pre-commit run --files
 ```
 
-Use `xargs`: under zsh, `--files $FILES` is one argument. Python docstrings are
+Use `xargs`: under zsh, `--files $FILES` is one argument. The Prettier and
+ESLint hooks run `npx` from `node_modules`, at the versions in `package.json`,
+the same ones CI's lint step runs. Don't switch them back to
+`mirrors-prettier`: its Prettier 4 alpha accepted a README table that CI's
+Prettier 3 rejected. Python docstrings are
 reST (`:param:`, `:returns:`, `:raises:`), as in the platform and the Python SDK.
