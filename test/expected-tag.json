@@ -1,0 +1,76 @@
+{
+  "$comment": "The tag that every package writes for the same options (doc/adr/003-same-options.md). Options are camelCase; each package names them in its own style. Every package's tests check these cases.",
+  "cases": [
+    {
+      "name": "every option",
+      "options": {
+        "chatbot": "https://docs-bot.example.com/",
+        "apiKey": "key-1",
+        "position": "bottom-left",
+        "label": "Ask the docs",
+        "color": "#123456",
+        "open": true,
+        "height": "70vh",
+        "width": "420px"
+      },
+      "attributes": {
+        "src": "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.9.0/dist/embed.js",
+        "data-chatbot": "https://docs-bot.example.com/",
+        "data-api-key": "key-1",
+        "data-position": "bottom-left",
+        "data-label": "Ask the docs",
+        "data-color": "#123456",
+        "data-open": "true",
+        "data-height": "70vh",
+        "data-width": "420px",
+        "async": true
+      }
+    },
+    {
+      "name": "only a chatbot",
+      "options": { "chatbot": "https://docs-bot.example.com/" },
+      "attributes": {
+        "src": "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.9.0/dist/embed.js",
+        "data-chatbot": "https://docs-bot.example.com/",
+        "async": true
+      }
+    },
+    {
+      "name": "a version range, and hostile text",
+      "options": {
+        "chatbot": "https://docs-bot.example.com/",
+        "version": "0.9",
+        "label": "\"><script>alert(1)</script>"
+      },
+      "attributes": {
+        "src": "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.9/dist/embed.js",
+        "data-chatbot": "https://docs-bot.example.com/",
+        "data-label": "\"><script>alert(1)</script>",
+        "async": true
+      }
+    },
+    {
+      "name": "a self-hosted script",
+      "options": { "chatbot": "https://docs-bot.example.com/", "src": "/assets/smarter-chat/embed.js" },
+      "attributes": {
+        "src": "/assets/smarter-chat/embed.js",
+        "data-chatbot": "https://docs-bot.example.com/",
+        "async": true
+      }
+    }
+  ],
+  "invalid": [
+    { "name": "no chatbot", "options": {} },
+    { "name": "a chatbot that isn't http(s)", "options": { "chatbot": "javascript:alert(1)" } },
+    { "name": "an unknown position", "options": { "chatbot": "https://docs-bot.example.com/", "position": "top" } },
+    { "name": "a color that isn't hex", "options": { "chatbot": "https://docs-bot.example.com/", "color": "red; x" } },
+    {
+      "name": "a version that isn't one",
+      "options": { "chatbot": "https://docs-bot.example.com/", "version": "latest/../x" }
+    },
+    {
+      "name": "a src that isn't a url or a path",
+      "options": { "chatbot": "https://docs-bot.example.com/", "src": "javascript:x" }
+    }
+  ]
+}

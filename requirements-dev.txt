@@ -1,0 +1,7 @@
+# The Python packages' test and build tooling. `make init` installs it, with both packages in editable mode.
+build
+mkdocs-material
+pre-commit
+pytest
+pytest-cov
+twine

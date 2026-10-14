@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinx-smarter-chat"
+version = "0.1.0"
+description = "A Sphinx extension that adds a Smarter chatbot to every page of a documentation site, with any html theme."
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Lawrence McDaniel", email = "lpm0073@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["sphinx>=7"]
+keywords = ["sphinx", "sphinx-extension", "read-the-docs", "chatbot", "ai", "smarter"]
+classifiers = [
+  "Framework :: Sphinx :: Extension",
+  "Programming Language :: Python :: 3",
+  "Topic :: Documentation :: Sphinx",
+]
+
+[project.urls]
+Homepage = "https://docs.smarter.sh/en/latest/smarter-framework/smarter-docs-sites.html"
+Source = "https://github.com/smarter-sh/smarter-docs-site-generators/tree/main/sphinx"
+Issues = "https://github.com/smarter-sh/smarter-docs-site-generators/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
