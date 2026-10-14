@@ -1,0 +1,33 @@
+---
+#------------------------------------------------------------------------------
+# Build every package, as `make build` does: the Docusaurus plugin's npm
+# tarball, and the MkDocs plugin's and the Sphinx extension's sdists and
+# wheels. Publishing is done by hand, with `make publish`.
+#------------------------------------------------------------------------------
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, alpha, beta]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Build
+        run: |
+          python -m pip install --upgrade pip build
+          mkdir -p build
+          cd docusaurus && npm pack --pack-destination ../build && cd ..
+          python -m build --outdir build mkdocs
+          python -m build --outdir build sphinx
+          ls build

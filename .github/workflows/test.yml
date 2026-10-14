@@ -2,7 +2,10 @@
 #------------------------------------------------------------------------------
 # Test every package: the Docusaurus plugin and the VitePress example on
 # Node.js, the MkDocs plugin and the Sphinx extension on every supported
-# Python version, each against test/expected-tag.json and embed.json.
+# Python version, each against test/expected-tag.json and embed.json. Upload
+# each package's coverage to Codecov, one flag per package.
+#
+# Requires a CODECOV_TOKEN secret.
 #------------------------------------------------------------------------------
 name: Test
 
@@ -30,6 +33,14 @@ jobs:
         run: npm install --include=dev && npx eslint --max-warnings=0 . && npx prettier --check .
       - name: Docusaurus plugin
         run: cd docusaurus && npm install --include=dev && npx vitest run --coverage && npm run typecheck
+      - name: Upload Docusaurus coverage to Codecov
+        if: matrix.node-version == '24'
+        uses: codecov/codecov-action@v7
+        with:
+          files: ./docusaurus/coverage/lcov.info
+          flags: docusaurus
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
       - name: VitePress example
         run: cd vitepress/example && npm install --include=dev && npm run build && cd ../.. && node scripts/check-vitepress.mjs
 
@@ -47,6 +58,22 @@ jobs:
       - name: Install
         run: python -m pip install --upgrade pip && pip install -e mkdocs -e sphinx -r requirements-dev.txt
       - name: MkDocs plugin
-        run: python -m pytest mkdocs/tests --cov=mkdocs_smarter_chat --cov-report=term-missing --cov-fail-under=95
+        run: python -m pytest mkdocs/tests --cov=mkdocs_smarter_chat --cov-report=term-missing --cov-report=xml:coverage/mkdocs.xml --cov-fail-under=95
       - name: Sphinx extension
-        run: python -m pytest sphinx/tests --cov=sphinx_smarter_chat --cov-report=term-missing --cov-fail-under=95
+        run: python -m pytest sphinx/tests --cov=sphinx_smarter_chat --cov-report=term-missing --cov-report=xml:coverage/sphinx.xml --cov-fail-under=95
+      - name: Upload MkDocs coverage to Codecov
+        if: matrix.python-version == '3.14'
+        uses: codecov/codecov-action@v7
+        with:
+          files: ./coverage/mkdocs.xml
+          flags: mkdocs
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Upload Sphinx coverage to Codecov
+        if: matrix.python-version == '3.14'
+        uses: codecov/codecov-action@v7
+        with:
+          files: ./coverage/sphinx.xml
+          flags: sphinx
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
