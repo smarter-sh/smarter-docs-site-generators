@@ -1,5 +1,9 @@
 # @smarter.sh/docusaurus-plugin-smarter-chat
 
+[![Build](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml)
+[![Test](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml)
+[![Docusaurus coverage](https://img.shields.io/codecov/c/github/smarter-sh/smarter-docs-site-generators/main?flag=docusaurus&label=coverage&logo=codecov)](https://app.codecov.io/gh/smarter-sh/smarter-docs-site-generators?flags%5B0%5D=docusaurus)
+
 A [Docusaurus](https://docusaurus.io) 3 plugin that adds a [Smarter](https://smarter.sh) chatbot to every page of a
 documentation site: a chat button in a corner of the page, which opens the chat. The chat is the embed script of
 [`@smarter.sh/ui-chat`](https://github.com/smarter-sh/smarter-chat); its look comes from the chatbot's manifest.

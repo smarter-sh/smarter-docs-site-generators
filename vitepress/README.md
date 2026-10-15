@@ -1,5 +1,8 @@
 # Smarter Chat for VitePress
 
+[![Build](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml)
+[![Test](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml)
+
 Add a [Smarter](https://smarter.sh) chatbot to every page of a VitePress site: one `head` entry in
 `.vitepress/config.mts`. There is no package to install (see
 [ADR-007](../doc/adr/007-vitepress.md)).

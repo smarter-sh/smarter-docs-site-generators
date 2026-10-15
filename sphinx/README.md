@@ -1,5 +1,9 @@
 # sphinx-smarter-chat
 
+[![Build](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/build.yml)
+[![Test](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/smarter-sh/smarter-docs-site-generators/actions/workflows/test.yml)
+[![Sphinx coverage](https://img.shields.io/codecov/c/github/smarter-sh/smarter-docs-site-generators/main?flag=sphinx&label=coverage&logo=codecov)](https://app.codecov.io/gh/smarter-sh/smarter-docs-site-generators?flags%5B0%5D=sphinx)
+
 A [Sphinx](https://www.sphinx-doc.org) extension that adds a [Smarter](https://smarter.sh) chatbot to every page of a
 documentation site, with any html theme (Read the Docs', Furo, PyData, Book, Alabaster): a chat button in a corner of
 the page, which opens the chat. The chat is the embed script of
