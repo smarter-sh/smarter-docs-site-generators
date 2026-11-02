@@ -14,7 +14,7 @@
         "width": "420px"
       },
       "attributes": {
-        "src": "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.9.0/dist/embed.js",
+        "src": "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.39.0/dist/embed.js",
         "data-chatbot": "https://docs-bot.example.com/",
         "data-api-key": "key-1",
         "data-position": "bottom-left",
@@ -30,7 +30,7 @@
       "name": "only a chatbot",
       "options": { "chatbot": "https://docs-bot.example.com/" },
       "attributes": {
-        "src": "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.9.0/dist/embed.js",
+        "src": "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.39.0/dist/embed.js",
         "data-chatbot": "https://docs-bot.example.com/",
         "async": true
       }

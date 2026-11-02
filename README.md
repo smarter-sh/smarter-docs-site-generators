@@ -9,6 +9,7 @@
 [![MkDocs coverage](https://img.shields.io/codecov/c/github/smarter-sh/smarter-docs-site-generators/main?flag=mkdocs&label=MkDocs%20coverage&logo=codecov)](https://app.codecov.io/gh/smarter-sh/smarter-docs-site-generators?flags%5B0%5D=mkdocs)
 [![Sphinx coverage](https://img.shields.io/codecov/c/github/smarter-sh/smarter-docs-site-generators/main?flag=sphinx&label=Sphinx%20coverage&logo=codecov)](https://app.codecov.io/gh/smarter-sh/smarter-docs-site-generators?flags%5B0%5D=sphinx)
 [![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue)](LICENSE.txt)
+[![Slack](https://img.shields.io/badge/Slack-The%20Smarter%20Project-4A154B?logo=slack&logoColor=white)](https://join.slack.com/t/thesmarterproject/shared_invite/zt-4f0t6v46q-e2c5Of4hS4fBr_XwfQARCw)
 
 Each package adds the chat launcher of [`@smarter.sh/ui-chat`](https://github.com/smarter-sh/smarter-chat)'s embed
 script, a chat button that opens the chat, to every page of the built site. The chatbot is an LLMClient that you build

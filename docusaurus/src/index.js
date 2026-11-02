@@ -9,7 +9,7 @@
  */
 
 /** The version of the embed script that this release is tested with. Copied from ../embed.json. */
-export const EMBED_VERSION = "0.9.0";
+export const EMBED_VERSION = "0.39.0";
 
 /** The launcher's corners. */
 export const POSITIONS = ["bottom-right", "bottom-left"];
