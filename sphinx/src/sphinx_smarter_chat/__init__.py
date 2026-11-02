@@ -23,7 +23,7 @@ from sphinx.errors import ConfigError
 from . import tag
 from .tag import EMBED_VERSION
 
-__version__ = "0.1.1-alpha.1"
+__version__ = "0.1.1"
 __all__ = ["EMBED_VERSION", "setup"]
 
 OPTIONS: dict[str, Any] = {
