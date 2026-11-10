@@ -9,7 +9,7 @@ export default defineConfig({
     [
       "script",
       {
-        src: "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@0.39.0/dist/embed.js",
+        src: "https://cdn.jsdelivr.net/npm/@smarter.sh/ui-chat@1.1.7/dist/embed.js",
         "data-chatbot": "https://docs-bot.example.com/",
         "data-api-key": "key-1",
         "data-position": "bottom-left",
