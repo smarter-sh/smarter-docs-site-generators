@@ -12,7 +12,7 @@ import re
 from collections.abc import Mapping
 from typing import Union
 
-EMBED_VERSION = "0.39.0"
+EMBED_VERSION = "1.1.7"
 """The version of ``@smarter.sh/ui-chat``'s embed script that this release is tested with. Copied from embed.json."""
 
 POSITIONS = ("bottom-right", "bottom-left")
