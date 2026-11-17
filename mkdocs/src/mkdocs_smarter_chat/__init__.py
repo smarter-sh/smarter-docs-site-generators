@@ -6,5 +6,5 @@ See :mod:`mkdocs_smarter_chat.plugin`, and ``doc/adr/005-mkdocs.md`` in its repo
 
 __version__ = "0.1.1-alpha.2"
 
-EMBED_VERSION = "1.1.7"
+EMBED_VERSION = "1.1.10"
 """The version of ``@smarter.sh/ui-chat``'s embed script that this release is tested with. Copied from embed.json."""
