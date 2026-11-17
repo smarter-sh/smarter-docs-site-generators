@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 
 
+## [0.1.2-alpha.1](https://github.com/smarter-sh/smarter-docs-site-generators/compare/v0.1.1...v0.1.2-alpha.1) (2026-11-17)
+
+### Bug Fixes
+
+* **embed:** load [@smarter](https://github.com/smarter).sh/ui-chat 1.1.10 ([b7df9a3](https://github.com/smarter-sh/smarter-docs-site-generators/commit/b7df9a3e771a69aeb6a32a1a8791f211069e37f1))
+* **embed:** load [@smarter](https://github.com/smarter).sh/ui-chat 1.1.7 ([15f06e1](https://github.com/smarter-sh/smarter-docs-site-generators/commit/15f06e1799d087ed5824837226c0a0372a50da65))
+
 ## [0.1.1](https://github.com/smarter-sh/smarter-docs-site-generators/compare/v0.1.0...v0.1.1) (2026-11-02)
 
 ### Bug Fixes
